@@ -1,0 +1,46 @@
+name: Deploy
+
+on:
+
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 * * * *'
+    
+  autopull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Create .elog.env file
+        run: |
+          echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .elog.env
+          echo "NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}" >> .elog.env
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run pnpm pull
+        run: pnpm pull
+
+      - name: Commit and push changes if needed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if ! git diff --cached --quiet; then
+            timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            git commit -m "doc(post): added post to docs directory at $timestamp"
+            git push
+          else
+            echo "No changes to commit or push."
+          fi
