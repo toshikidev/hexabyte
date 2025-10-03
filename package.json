@@ -21,6 +21,7 @@
   "dependencies": {
     "@elog/cli": "^0.14.7",
     "gray-matter": "^4.0.3",
+    "lightgallery.css": "link:lightgallery/css/lightgallery.css",
     "mdit-plugin-callouts": "^1.2.0",
     "medium-zoom": "^1.1.0",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.1",
