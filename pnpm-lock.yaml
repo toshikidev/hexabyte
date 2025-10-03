@@ -26,6 +26,9 @@ importers:
       vitepress-plugin-lightbox:
         specifier: ^1.0.3
         version: 1.0.3
+      vitepress-plugin-rss:
+        specifier: ^0.3.2
+        version: 0.3.2(vitepress@2.0.0-alpha.12(@types/node@24.6.2)(postcss@8.5.6)(typescript@4.9.5))
       vitepress-sidebar:
         specifier: ^1.33.0
         version: 1.33.0
@@ -572,6 +575,9 @@ packages:
   '@sindresorhus/is@0.14.0':
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
+
+  '@sugarat/theme-shared@0.0.6':
+    resolution: {integrity: sha512-858llnOYVBkzXy9/WICD/xNeGI3V+FDzfRaF8JACN/WIhyADB4crpjjgMgy04MgnE3QLUYiIH0ZvgFps1XOqSA==}
 
   '@szmarczak/http-timer@1.1.2':
     resolution: {integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==}
@@ -1563,6 +1569,10 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  feed@4.2.2:
+    resolution: {integrity: sha512-u5/sxGfiMfZNtJ3OvQpXcvotFpYkL0n9u9mM2vkui2nGo8b4wvDkJ8gAkYqbA8QpGyFCv3RK0Z+Iv+9veCS9bQ==}
+    engines: {node: '>=0.4.0'}
 
   figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
@@ -3344,6 +3354,11 @@ packages:
   vitepress-plugin-lightbox@1.0.3:
     resolution: {integrity: sha512-40E/ofp5Uk9X/yC5Mz/jeVAhaG51fOXqPZokLue2r28czyucini+NmfIiabNZi+1bCvLBF5GNUz5TJIyuQSJLA==}
 
+  vitepress-plugin-rss@0.3.2:
+    resolution: {integrity: sha512-ZkC14miSquQ4yJxLVGe2yimUQh6dPepn4hO4YR8oVY76jxSNg+70EVw/A72/GNGLvvRIiPo3OmKblM9zXrFwcA==}
+    peerDependencies:
+      vitepress: ^1
+
   vitepress-sidebar@1.33.0:
     resolution: {integrity: sha512-+z45vGG6OQRKNU7OMhmrp5y9dk9Y8loFZGE2LwzqloqA4p+ECP3/Ti6qrS8kB3N8Rol4v0Nf8HSnsgZEDU4HXQ==}
     engines: {node: '>=18.0.0'}
@@ -3471,6 +3486,10 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  xml-js@1.6.11:
+    resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}
+    hasBin: true
 
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
@@ -4060,6 +4079,11 @@ snapshots:
   '@shikijs/vscode-textmate@10.0.2': {}
 
   '@sindresorhus/is@0.14.0': {}
+
+  '@sugarat/theme-shared@0.0.6':
+    dependencies:
+      cross-spawn: 7.0.6
+      gray-matter: 4.0.3
 
   '@szmarczak/http-timer@1.1.2':
     dependencies:
@@ -5204,6 +5228,10 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  feed@4.2.2:
+    dependencies:
+      xml-js: 1.6.11
 
   figures@3.2.0:
     dependencies:
@@ -7244,6 +7272,12 @@ snapshots:
       medium-zoom: 1.1.0
       photoswipe: 5.4.4
 
+  vitepress-plugin-rss@0.3.2(vitepress@2.0.0-alpha.12(@types/node@24.6.2)(postcss@8.5.6)(typescript@4.9.5)):
+    dependencies:
+      '@sugarat/theme-shared': 0.0.6
+      feed: 4.2.2
+      vitepress: 2.0.0-alpha.12(@types/node@24.6.2)(postcss@8.5.6)(typescript@4.9.5)
+
   vitepress-sidebar@1.33.0:
     dependencies:
       glob: 10.4.5
@@ -7425,6 +7459,10 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.18.3: {}
+
+  xml-js@1.6.11:
+    dependencies:
+      sax: 1.4.1
 
   xml-name-validator@4.0.0: {}
 
