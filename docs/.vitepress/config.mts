@@ -3,6 +3,14 @@ import { withSidebar } from 'vitepress-sidebar'
 import { defineConfig } from 'vitepress'
 import lightbox from 'vitepress-plugin-lightbox'
 import { autoIndexPlugin } from './plugins/auto-index'
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+
+const baseUrl = 'https://hexabyte.cc'
+const RSS: RSSOptions = {
+  title: 'Hexabyte CC',
+  baseUrl,
+  copyright: 'Copyright (c) 2025-present, Hexabyte CC',
+}
 
 const vitePressOptions = {
   title: "Hexabyte",
@@ -26,7 +34,7 @@ const vitePressOptions = {
     }
   },
   vite: {
-    plugins: [autoIndexPlugin()],
+    plugins: [autoIndexPlugin(), RssPlugin(RSS)],
     resolve: {
       alias: {
         crypto: 'node:crypto' // force Node’s built-in crypto
