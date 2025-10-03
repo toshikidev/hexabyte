@@ -43,6 +43,9 @@ const vitePressOptions = {
         crypto: 'node:crypto' // force Node’s built-in crypto
       }
     }
+  },
+  sitemap: {
+    hostname: 'https://hexabyte.cc'
   }
 }
 
