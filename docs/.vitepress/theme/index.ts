@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import Artalk from './components/artalk.vue'
+import Artalk from './components/Artalk.vue'
 import Layout from './components/Layout.vue'
 import 'mdit-plugin-callouts/index.css'
 import './styles/style.css'
