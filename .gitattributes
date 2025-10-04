@@ -1,0 +1,3 @@
+# Ensure .vitepress folder is included in the repository
+.vitepress/ export-ignore
+.vitepress/ !export-ignore
