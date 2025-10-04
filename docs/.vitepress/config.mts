@@ -104,6 +104,14 @@ const vitePressSidebarOptions = [
     useTitleFromFrontmatter: true,
     capitalizeFirst: true,
   },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: 'dev',
+    resolvePath: '/dev/',
+    basePath: '/dev/',
+    useTitleFromFrontmatter: true,
+    capitalizeFirst: true,
+  },
 ]
 
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))
