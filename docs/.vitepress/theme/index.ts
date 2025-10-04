@@ -9,14 +9,16 @@ import './styles/style.scss'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
-
 export default {
   extends: DefaultTheme,
-  
   Layout,
-  enhanceApp({ app, router, siteData }) {
-    app.component('Artalk', Artalk),
-    app.use(NolebaseGitChangelogPlugin)
-  }
-} satisfies Theme
+  enhanceApp({ app }) {
+    app.component('Artalk', Artalk)
 
+    app.use(NolebaseGitChangelogPlugin, {
+      hideContributorsHeader: true,
+      // hideChangelogHeader: true,
+      // hideChangelogNoChangesText: true,
+    })
+  },
+} satisfies Theme
