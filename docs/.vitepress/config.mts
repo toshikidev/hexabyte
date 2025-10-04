@@ -3,8 +3,10 @@ import { withSidebar } from 'vitepress-sidebar'
 import { defineConfig } from 'vitepress'
 import lightbox from 'vitepress-plugin-lightbox'
 import { autoIndexPlugin } from './plugins/auto-index'
+import { bookmarkPreviewPlugin, bookmarkPreviewMdPlugin } from './plugins/bookmark-preview'
 import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
 import mdkatex from '@andatoshiki/markdown-it-katex'
+import mdLink from 'markdown-it-link-preview'
 
 import {
   GitChangelog,
@@ -44,7 +46,10 @@ const vitePressOptions = {
   markdown: {
     // math: true,
     config: (md) => {
-      ;(md.use(lightbox), md.use(mdkatex))
+      md.use(lightbox)
+      md.use(mdkatex)
+      md.use(mdLink)
+      md.use(bookmarkPreviewMdPlugin)
     },
   },
   themeConfig: {
@@ -71,6 +76,7 @@ const vitePressOptions = {
         repoURL: () => 'https://github.com/toshikidev/hexabyte',
       }),
       GitChangelogMarkdownSection(),
+      bookmarkPreviewPlugin(),
     ],
     resolve: {
       alias: {
