@@ -1,17 +1,25 @@
 ---
-category: ''
-tags: []
+category: memo
+tags:
+  - memo
+  - review
+  - productivity
+  - apps
+  - software
 status: published
-date: '2025-10-03 17:58:00'
+date: '2025-10-03 08:00:00'
 catalog:
   - memo
-urlname: 281ac9fd-0546-806e-ae60-e54f32d82a73
+urlname: productivity-memo-01
 title: 效率备忘录 01 我的效率工具选择：Wox 与 imfile
-summary: ''
-updated: '2025-10-03 19:58:00'
+summary: 本文分享了提升 Windows 效率的三款开源工具与用法：1）启动器 Wox 2，界面与 Win11 风格统一，提供快速启动、计算与搜索，但不兼容旧版插件并可能需手动添加开始菜单快捷方式；2）多线程下载器 Motrix，配合浏览器扩展 Aria2 Explorer 可拦截下载任务到 Aria2，实现近似 IDM 的无缝体验；3）Motrix 的持续维护分支 imfile，界面与稳定性优化、仍在活跃更新，作为 Motrix 的替代更省心。文中给出扩展与 RPC 端口设置要点与注意事项。
+updated: '2025-10-04 14:15:00'
 ---
 
-### **简约的开源启动器：Wox 2**
+# 效率备忘录 01 我的效率工具选择：Wox 与 imfile
+
+
+## **简约的开源启动器：Wox**
 
 
 下载链接：[https://github.com/Wox-launcher/Wox/releases](https://github.com/Wox-launcher/Wox/releases)
@@ -44,7 +52,7 @@ updated: '2025-10-03 19:58:00'
 不过 wox2 版本无法使用旧版本的插件生态，如果你非常依赖之前 wox 的插件市场，请不要下载 wox 2 版本，而是选择 wox 1，还请注意！
 
 
-### **全能下载工具：Motrix**
+## **全能下载工具：Motrix**
 
 
 官网：[https://motrix.app/](https://motrix.app/)
@@ -59,7 +67,7 @@ updated: '2025-10-03 19:58:00'
 当我网上冲浪时（为什么要用这么古早的词汇）发现 Motrix 可以使用 [Aria2 Explorer](https://chromewebstore.google.com/detail/aria2-explorer/mpkodccbngfoacfalldjimigbofkhgjn) 插件拦截浏览器下载任务到 Aria2，而 Motrix 可以接收拦截到的任务，现在它已经完全替换掉我之前使用的 IDM 了。
 
 
-### **Aria2 Explorer**
+## **Aria2 Explorer**
 
 
 下载链接：[https://chromewebstore.google.com/detail/aria2-explorer/mpkodccbngfoacfalldjimigbofkhgjn](https://chromewebstore.google.com/detail/aria2-explorer/mpkodccbngfoacfalldjimigbofkhgjn)
@@ -80,7 +88,7 @@ updated: '2025-10-03 19:58:00'
 ![image-20250701235748177.png](assets/6d47d2969daed9afc61237045ea755dc.png)
 
 
-### **全能下载工具继任者：imfile**
+## **全能下载工具继任者：imfile**
 
 
 下载链接：[https://github.com/imfile-io/imfile-desktop](https://github.com/imfile-io/imfile-desktop)
