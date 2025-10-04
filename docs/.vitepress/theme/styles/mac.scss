@@ -1,13 +1,13 @@
 /* .vitepress/theme/style/vp-code.css */
 
 /* code block: add margin */
-.vp-doc div[class*="language-"] {
+.vp-doc div[class*='language-'] {
   padding-top: 20px;
 }
 
 /* code block: add macos style dots */
-.vp-doc div[class*="language-"]::before {
-  content: "";
+.vp-doc div[class*='language-']::before {
+  content: '';
   display: block;
   position: absolute;
   top: 12px;
@@ -16,7 +16,9 @@
   height: 12px;
   background-color: #ff5f56;
   border-radius: 50%;
-  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  box-shadow:
+    20px 0 0 #ffbd2e,
+    40px 0 0 #27c93f;
   z-index: 1;
 }
 
@@ -28,7 +30,7 @@
 
 /* code block: restore right border for line numbers */
 .vp-doc .line-numbers-wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 40px;
   right: 0;
@@ -36,7 +38,7 @@
   height: calc(100% - 60px);
 }
 
-.vp-doc div[class*="language-"].line-numbers-mode {
+.vp-doc div[class*='language-'].line-numbers-mode {
   margin-bottom: 20px;
 }
 
