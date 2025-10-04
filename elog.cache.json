@@ -97,9 +97,84 @@
       "realName": "效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip",
       "relativePath": "/memo/效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip.md",
       "docPath": "docs/memo"
+    },
+    {
+      "id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
+      "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
+      "updated": 1759576260000,
+      "properties": {
+        "category": "dev",
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
+        "status": "published",
+        "date": "2025-10-04 08:00:00",
+        "catalog": [
+          "dev"
+        ],
+        "urlname": "stripping-env-file-content-from-cli",
+        "title": "Stripping Environment File Content from the CLI",
+        "summary": "使用一条 sed 命令从 .env 中提取变量名并去除空格，保留注释和空行，结果复制到剪贴板。",
+        "updated": "2025-10-04 19:11:00"
+      },
+      "catalog": [
+        {
+          "title": "dev",
+          "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6"
+        }
+      ],
+      "realName": "Stripping Environment File Content from the CLI",
+      "relativePath": "/dev/Stripping Environment File Content from the CLI.md",
+      "docPath": "docs/dev"
     }
   ],
   "catalog": [
+    {
+      "object": "page",
+      "id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
+      "created_time": "2025-10-04T06:19:00.000Z",
+      "last_edited_time": "2025-10-04T11:11:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "d0dde20a-2650-4cc2-a859-9c4e5d0be85a"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "d0dde20a-2650-4cc2-a859-9c4e5d0be85a"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "281ac9fd-0546-81cf-8db2-e62db53d7690"
+      },
+      "archived": false,
+      "in_trash": false,
+      "is_locked": false,
+      "properties": {
+        "category": "dev",
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
+        "status": "published",
+        "date": "2025-10-04 08:00:00",
+        "catalog": [
+          "dev"
+        ],
+        "urlname": "stripping-env-file-content-from-cli",
+        "title": "Stripping Environment File Content from the CLI",
+        "summary": "使用一条 sed 命令从 .env 中提取变量名并去除空格，保留注释和空行，结果复制到剪贴板。",
+        "updated": "2025-10-04 19:11:00"
+      },
+      "url": "https://www.notion.so/Stripping-Environment-File-Content-from-the-CLI-282ac9fd054680ffb5e7e8903bd06cb6",
+      "public_url": "https://andatoshiki.notion.site/Stripping-Environment-File-Content-from-the-CLI-282ac9fd054680ffb5e7e8903bd06cb6"
+    },
     {
       "object": "page",
       "id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5",
@@ -123,6 +198,7 @@
       "in_trash": false,
       "is_locked": false,
       "properties": {
+        "cover": "",
         "category": "memo",
         "tags": [
           "memo",
@@ -167,6 +243,7 @@
       "in_trash": false,
       "is_locked": false,
       "properties": {
+        "cover": "",
         "category": "memo",
         "tags": [
           "memo",
@@ -211,6 +288,7 @@
       "in_trash": false,
       "is_locked": false,
       "properties": {
+        "cover": "",
         "category": "review",
         "tags": [
           "animeko",

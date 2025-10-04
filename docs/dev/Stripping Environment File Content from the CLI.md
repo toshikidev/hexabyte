@@ -1,0 +1,31 @@
+---
+category: dev
+tags:
+  - dev
+  - tutorial
+  - cli
+  - regex
+status: published
+date: '2025-10-04 08:00:00'
+catalog:
+  - dev
+urlname: stripping-env-file-content-from-cli
+title: Stripping Environment File Content from the CLI
+summary: 使用一条 sed 命令从 .env 中提取变量名并去除空格，保留注释和空行，结果复制到剪贴板。
+updated: '2025-10-04 19:11:00'
+---
+
+# Stripping Environment File Content from the CLI
+
+
+```bash
+sed -E 's/^([A-Za-z_][A-Za-z0-9_]*)=.*/\\1=/; /^#|^$/!s/ //g' .env | pbcopy
+```
+
+
+## Explanation
+
+- `sed -E` → enable extended regex.
+- `^([A-Za-z_][A-Za-z0-9_]*)=.*` → matches variable assignments; replaces them with just the variable name (`\\1=`).
+- `^#|^$` → comments or empty lines → left as-is.
+- `pbcopy` → pipes the final output to your macOS clipboard.
