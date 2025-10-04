@@ -21,10 +21,32 @@ const RSS: RSSOptions = {
 const vitePressOptions = {
   title: "Hexabyte",
   description: "Think, Read & Write; Reflect, Audit & Publish.",
+    head: [
+    // [
+    //   'script',
+    //   {},
+    //   `
+    //   (function() {
+    //     if (document.documentElement.classList.contains('dark')) {
+    //       document.body.classList.add('atk-dark');
+    //     }
+    //   })();
+    //   `
+    // ],
+    [
+        'link',
+        {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.toshiki.dev/ajax/libs/KaTeX/0.16.0/katex.min.css',
+        },
+    ],
+  ],
   markdown: {
-    config: (md) => {
-      md.use(lightbox, {})
-    },
+    // math: true,
+    config: md => {
+      md.use(lightbox),
+      md.use(mdkatex)
+    }
   },
   themeConfig: {
     nav: [

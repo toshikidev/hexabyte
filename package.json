@@ -31,11 +31,16 @@
     "vue": "^3.5.22"
   },
   "devDependencies": {
+    "@andatoshiki/markdown-it-katex": "^0.0.3",
     "@artalk/plugin-katex": "^0.2.4",
     "@artalk/plugin-lightbox": "^0.2.4",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "artalk": "^2.9.1",
     "katex": "^0.16.22",
     "lightgallery": "^2.9.0",
+    "markdown-it-mathjax3": "^5.2.0",
+    "sass-embedded": "^1.93.2",
+    "scss": "^0.2.4",
     "vitepress": "2.0.0-alpha.12"
   }
 }

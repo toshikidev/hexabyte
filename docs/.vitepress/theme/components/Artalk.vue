@@ -56,6 +56,7 @@ function initArtalk(conf: any) {
     })
   })
 
+
   artalk = Artalk.init({
     el: el.value,
     emoticons: 'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/artalk.json',
