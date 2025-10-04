@@ -15,7 +15,6 @@ import {
 
 const baseUrl = 'https://hexabyte.cc'
 const RSS: RSSOptions = {
-  logo: '/hexabyte.png',
   title: 'Hexabyte CC',
   baseUrl,
   copyright: 'Copyright (c) 2025-present, Hexabyte CC',
@@ -49,8 +48,13 @@ const vitePressOptions = {
       md.use(mdLink)
       md.use(bookmarkPreviewMdPlugin)
     },
+    lineNumbers: true
   },
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path'
+    },
+    logo: '/hexabyte.png',
     nav: [
       { text: 'Memo', link: '/memo/' },
       { text: 'Review', link: '/review/' },
