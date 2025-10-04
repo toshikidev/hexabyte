@@ -1,0 +1,43 @@
+/* .vitepress/theme/style/vp-code.css */
+
+/* code block: add margin */
+.vp-doc div[class*="language-"] {
+  padding-top: 20px;
+}
+
+/* code block: add macos style dots */
+.vp-doc div[class*="language-"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff5f56;
+  border-radius: 50%;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  z-index: 1;
+}
+
+/* code block: move line numbers down, hide right border */
+.vp-doc .line-numbers-wrapper {
+  padding-top: 40px;
+  border-right: none;
+}
+
+/* code block: restore right border for line numbers */
+.vp-doc .line-numbers-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border-right: 1px solid var(--vp-code-block-divider-color);
+  height: calc(100% - 60px);
+}
+
+.vp-doc div[class*="language-"].line-numbers-mode {
+  margin-bottom: 20px;
+}
+
+/* author: qianxunya | source: https://juejin.cn/post/7516897449546711076 */
