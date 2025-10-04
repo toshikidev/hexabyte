@@ -71,6 +71,9 @@ importers:
       '@iconify-json/eos-icons':
         specifier: ^1.2.4
         version: 1.2.4
+      '@iconify-json/octicon':
+        specifier: ^1.2.14
+        version: 1.2.14
       '@iconify-json/ooui':
         specifier: ^1.2.12
         version: 1.2.12
