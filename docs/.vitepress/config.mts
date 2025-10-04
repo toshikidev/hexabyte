@@ -4,6 +4,12 @@ import { defineConfig } from 'vitepress'
 import lightbox from 'vitepress-plugin-lightbox'
 import { autoIndexPlugin } from './plugins/auto-index'
 import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+import mdkatex from '@andatoshiki/markdown-it-katex'
+
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 const baseUrl = 'https://hexabyte.cc'
 const RSS: RSSOptions = {
@@ -37,7 +43,18 @@ const vitePressOptions = {
     }
   },
   vite: {
-    plugins: [autoIndexPlugin(), RssPlugin(RSS)],
+    plugins: [
+      autoIndexPlugin(), 
+      RssPlugin(RSS),
+      GitChangelog
+      ({ 
+              // Fill in your repository URL here
+              repoURL
+      : () => 'https://github.com/toshikidev/hexabyte', 
+            }), 
+            GitChangelogMarkdownSection
+      (),
+    ],
     resolve: {
       alias: {
         crypto: 'node:crypto' // force Node’s built-in crypto
