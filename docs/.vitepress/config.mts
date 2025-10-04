@@ -48,7 +48,7 @@ const vitePressOptions = {
       md.use(mdLink)
       md.use(bookmarkPreviewMdPlugin)
     },
-    lineNumbers: true
+    lineNumbers: false
   },
   themeConfig: {
     editLink: {
