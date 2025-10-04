@@ -24,17 +24,14 @@ const vitePressOptions = {
   title: 'Hexabyte',
   description: 'Think, Read & Write; Reflect, Audit & Publish.',
   head: [
-    // [
-    //   'script',
-    //   {},
-    //   `
-    //   (function() {
-    //     if (document.documentElement.classList.contains('dark')) {
-    //       document.body.classList.add('atk-dark');
-    //     }
-    //   })();
-    //   `
-    // ],
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://umami.toshiki.dev/script.js',
+        'data-website-id': '19c4f141-5d75-4aee-9687-82de52667328',
+      },
+    ],
     [
       'link',
       {
