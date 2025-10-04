@@ -33,6 +33,9 @@ jobs:
 
       - name: Run pnpm pull
         run: pnpm pull
+      
+      - name: Run pnpm build
+        run: pnpm build # for compiling new index file during auto-index process if new dir is created
 
       - name: Commit and push changes if needed
         run: |
