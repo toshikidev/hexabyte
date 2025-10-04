@@ -48,18 +48,18 @@ const vitePressOptions = {
       md.use(mdLink)
       md.use(bookmarkPreviewMdPlugin)
     },
-    lineNumbers: false
+    lineNumbers: false,
   },
   themeConfig: {
     lastUpdated: true,
     editLink: {
-      pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path'
+      pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path',
     },
     logo: '/hexabyte.png',
     nav: [
       { text: 'Memo', link: '/memo/' },
       { text: 'Review', link: '/review/' },
-      { text: 'Development', link: '/dev/'}
+      { text: 'Development', link: '/dev/' },
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/toshikidev/hexabyte' }],
     footer: {
