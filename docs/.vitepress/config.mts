@@ -15,6 +15,7 @@ import {
 
 const baseUrl = 'https://hexabyte.cc'
 const RSS: RSSOptions = {
+  logo: '/hexabyte.png',
   title: 'Hexabyte CC',
   baseUrl,
   copyright: 'Copyright (c) 2025-present, Hexabyte CC',
