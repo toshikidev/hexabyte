@@ -52,6 +52,6 @@ export function autoIndexPlugin() {
     },
     configureServer() {
       generateAllIndexes()
-    }
+    },
   }
 }
