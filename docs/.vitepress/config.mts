@@ -53,6 +53,7 @@ const vitePressOptions = {
     nav: [
       { text: 'Memo', link: '/memo/' },
       { text: 'Review', link: '/review/' },
+      { text: 'Development', liunk: '/dev/'}
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/toshikidev/hexabyte' }],
     footer: {
