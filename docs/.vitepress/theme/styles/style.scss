@@ -92,17 +92,9 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
@@ -137,17 +129,16 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
-
 .vp-doc img {
   border-radius: 5px;
-    display: block;
+  display: block;
   margin: 1.5rem auto; /* centers horizontally */
-  max-width: 100%;     /* keeps images responsive */
+  max-width: 100%; /* keeps images responsive */
   height: auto;
 }
 
 .atk-copyright {
-  display: none !important;;
+  display: none !important;
 }
 
 // katex responsiveness fix
@@ -176,7 +167,6 @@
 }
 // katex responsiveness fix ends
 
-
 /* Prevent Artalk textarea flash in dark mode */
 // html.dark .atk-main,
 html.dark .atk-textarea,
@@ -186,17 +176,16 @@ html.dark .atk-bottom,
 html.dark .atk-editor .atk-textarea,
 .atk-layer-wrap.atk-dark-mode,
 html.dark .atk-editor .atk-textarea textarea {
-  background: #1E2224 !important;
+  background: #1e2224 !important;
   color: #fff !important;
   transition: none !important;
 }
 
 html.dark .atk-main-editor {
-  border: 1px solid #2e3437
+  border: 1px solid #2e3437;
 }
 
 .vp-nolebase-git-changelog.vp-nolebase-git-changelog-contributors.vp-nolebase-git-changelog-contributors-container.vp-nolebase-git-changelog-contributors-list,
-#contributors
- {
+#contributors {
   display: none;
 }

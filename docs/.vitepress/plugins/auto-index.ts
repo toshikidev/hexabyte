@@ -10,13 +10,12 @@ export function autoIndexPlugin() {
       const docsRoot = path.resolve(process.cwd(), 'docs')
 
       function generateIndex(dir: string, folder: string) {
-        const files = fs.readdirSync(dir)
-          .filter(f => f.endsWith('.md') && f !== 'index.md')
+        const files = fs.readdirSync(dir).filter((f) => f.endsWith('.md') && f !== 'index.md')
 
         if (files.length === 0) return
 
         const links = files
-          .map(f => {
+          .map((f) => {
             const filePath = path.join(dir, f)
             const raw = fs.readFileSync(filePath, 'utf-8')
             const fm = matter(raw)
@@ -34,21 +33,18 @@ export function autoIndexPlugin() {
         const indexPath = path.join(dir, 'index.md')
 
         // Always overwrite (rewrite every time)
-        fs.writeFileSync(
-          indexPath,
-          `# Index of: ${folder}\n\n${links}\n`
-        )
+        fs.writeFileSync(indexPath, `# Index of: ${folder}\n\n${links}\n`)
 
         console.log(`Auto-generated (rewritten): ${indexPath}`)
       }
 
       // Loop through each subfolder in /docs
-      fs.readdirSync(docsRoot).forEach(folder => {
+      fs.readdirSync(docsRoot).forEach((folder) => {
         const dir = path.join(docsRoot, folder)
         if (fs.statSync(dir).isDirectory()) {
           generateIndex(dir, folder)
         }
       })
-    }
+    },
   }
 }

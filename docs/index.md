@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Hexabyte"
-  text: "Think, Read & Write; Reflect, Audit & Publish."
+  name: 'Hexabyte'
+  text: 'Think, Read & Write; Reflect, Audit & Publish.'
   tagline: A knolwdge base of anything releated to tech for wizards!
   actions:
     - theme: brand
@@ -16,7 +16,6 @@ hero:
   image:
     src: /hexabyte.png
     alt: VitePress
-
 # features:
 #   - title: Feature A
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

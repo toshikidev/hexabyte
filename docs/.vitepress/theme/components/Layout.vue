@@ -2,25 +2,25 @@
 import DefaultTheme from 'vitepress/theme'
 import { inBrowser, useData } from 'vitepress'
 import { watchEffect } from 'vue'
-import { onMounted } from "vue";
-import { useRouter } from "vitepress";
-import mediumZoom from "medium-zoom";
+import { onMounted } from 'vue'
+import { useRouter } from 'vitepress'
+import mediumZoom from 'medium-zoom'
 
-const { Layout } = DefaultTheme;
-const router = useRouter();
+const { Layout } = DefaultTheme
+const router = useRouter()
 
 // Setup medium zoom with the desired options
 const setupMediumZoom = () => {
-  mediumZoom("[data-zoomable]", {
-    background: "transparent",
-  });
-};
+  mediumZoom('[data-zoomable]', {
+    background: 'transparent',
+  })
+}
 
 // Apply medium zoom on load
-onMounted(setupMediumZoom);
+onMounted(setupMediumZoom)
 
 // Subscribe to route changes to re-apply medium zoom effect
-router.onAfterRouteChange = setupMediumZoom;
+router.onAfterRouteChange = setupMediumZoom
 
 const { lang } = useData()
 watchEffect(() => {

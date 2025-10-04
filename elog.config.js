@@ -1,37 +1,37 @@
-const path = require("path")
+const path = require('path')
 
 module.exports = {
   write: {
-    platform: "notion",
+    platform: 'notion',
     notion: {
       token: process.env.NOTION_TOKEN,
       databaseId: process.env.NOTION_DATABASE_ID,
-      filter: { property: "status", select: { equals: "published" } },
+      filter: { property: 'status', select: { equals: 'published' } },
       catalog: {
         enable: true,
-        property: "catalog"
-      }
-    }
+        property: 'catalog',
+      },
+    },
   },
   deploy: {
-    platform: "local",
+    platform: 'local',
     local: {
-      outputDir: "./docs",
-      filename: "title",
-      format: "markdown",
+      outputDir: './docs',
+      filename: 'title',
+      format: 'markdown',
       frontMatter: {
         enable: true,
-        exclude: ["cover"]
+        exclude: ['cover'],
       },
-      catalog: true
-    }
+      catalog: true,
+    },
   },
   image: {
     enable: true,
-    platform: "local",
+    platform: 'local',
     local: {
-      outputDir: "./docs",              // base path
-      imagePathExt: "./scripts/imagePathExt.js" // point to the custom handler
-    }
-  }
+      outputDir: './docs', // base path
+      imagePathExt: './scripts/imagePathExt.js', // point to the custom handler
+    },
+  },
 }

@@ -19,9 +19,9 @@ const RSS: RSSOptions = {
 }
 
 const vitePressOptions = {
-  title: "Hexabyte",
-  description: "Think, Read & Write; Reflect, Audit & Publish.",
-    head: [
+  title: 'Hexabyte',
+  description: 'Think, Read & Write; Reflect, Audit & Publish.',
+  head: [
     // [
     //   'script',
     //   {},
@@ -34,67 +34,62 @@ const vitePressOptions = {
     //   `
     // ],
     [
-        'link',
-        {
-            rel: 'stylesheet',
-            href: 'https://cdnjs.toshiki.dev/ajax/libs/KaTeX/0.16.0/katex.min.css',
-        },
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.toshiki.dev/ajax/libs/KaTeX/0.16.0/katex.min.css',
+      },
     ],
   ],
   markdown: {
     // math: true,
-    config: md => {
-      md.use(lightbox),
-      md.use(mdkatex)
-    }
+    config: (md) => {
+      ;(md.use(lightbox), md.use(mdkatex))
+    },
   },
   themeConfig: {
     nav: [
       { text: 'Memo', link: '/memo/' },
-      { text: 'Review', link: '/review/' }
+      { text: 'Review', link: '/review/' },
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/toshikidev/hexabyte' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/toshikidev/hexabyte' }],
     footer: {
-      message: 'Released under the <a href="https://github.com/toshikidev/hexabyte/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2025-present Hexabyte'
+      message:
+        'Released under the <a href="https://github.com/toshikidev/hexabyte/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2025-present Hexabyte',
     },
     search: {
-      provider: 'local'
-    }
+      provider: 'local',
+    },
   },
   vite: {
     plugins: [
-      autoIndexPlugin(), 
+      autoIndexPlugin(),
       RssPlugin(RSS),
-      GitChangelog
-      ({ 
-              // Fill in your repository URL here
-              repoURL
-      : () => 'https://github.com/toshikidev/hexabyte', 
-            }), 
-            GitChangelogMarkdownSection
-      (),
+      GitChangelog({
+        // Fill in your repository URL here
+        repoURL: () => 'https://github.com/toshikidev/hexabyte',
+      }),
+      GitChangelogMarkdownSection(),
     ],
     resolve: {
       alias: {
-        crypto: 'node:crypto' // force Node’s built-in crypto
-      }
-    }
+        crypto: 'node:crypto', // force Node’s built-in crypto
+      },
+    },
   },
   sitemap: {
-    hostname: 'https://hexabyte.cc'
-  }
+    hostname: 'https://hexabyte.cc',
+  },
 }
 
 // multiple sidebars: one for /memo/, one for /review/
 const vitePressSidebarOptions = [
   {
-    documentRootPath: 'docs',   // always where .vitepress is
-    scanStartPath: 'memo',      // only scan docs/memo
-    resolvePath: '/memo/',      // shows when visiting /memo/*
-    basePath: '/memo/',         // links become /memo/xxx
+    documentRootPath: 'docs', // always where .vitepress is
+    scanStartPath: 'memo', // only scan docs/memo
+    resolvePath: '/memo/', // shows when visiting /memo/*
+    basePath: '/memo/', // links become /memo/xxx
     useTitleFromFrontmatter: true,
     capitalizeFirst: true,
   },
@@ -105,7 +100,7 @@ const vitePressSidebarOptions = [
     basePath: '/review/',
     useTitleFromFrontmatter: true,
     capitalizeFirst: true,
-  }
+  },
 ]
 
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))

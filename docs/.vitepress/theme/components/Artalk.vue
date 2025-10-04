@@ -12,7 +12,6 @@ import 'lightgallery/css/lightgallery.css'
 import 'katex/dist/katex.min.css'
 import 'artalk/Artalk.css'
 
-
 const el = ref<HTMLElement | null>(null)
 
 const router = useRouter()
@@ -33,7 +32,7 @@ watch(
       artalk.update(getConfByPage())
       artalk.reload()
     })
-  },
+  }
 )
 
 onUnmounted(() => {
@@ -56,16 +55,15 @@ function initArtalk(conf: any) {
     })
   })
 
-
   artalk = Artalk.init({
     el: el.value,
     emoticons: 'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/artalk.json',
     avatarURLBuilder: (c) => {
       // 自定义头像URL生成器函数
       if (c.is_admin) {
-        return "https://youke1.picui.cn/s1/2025/09/21/68cf783518781.jpg"; // 如果是管理员，使用指定的管理员头像URL
+        return 'https://youke1.picui.cn/s1/2025/09/21/68cf783518781.jpg' // 如果是管理员，使用指定的管理员头像URL
       }
-      return `https://avatar.tosh1ki.de/avatar/${c.email_encrypted}`; // 否则，使用加密的邮箱生成Gravatar头像URL
+      return `https://avatar.tosh1ki.de/avatar/${c.email_encrypted}` // 否则，使用加密的邮箱生成Gravatar头像URL
     },
     ...conf,
   })

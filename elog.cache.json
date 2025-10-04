@@ -6,12 +6,7 @@
       "updated": 1759492680000,
       "properties": {
         "category": "",
-        "tags": [
-          "elog",
-          "notion",
-          "hexo",
-          "blog"
-        ],
+        "tags": ["elog", "notion", "hexo", "blog"],
         "status": "published",
         "date": "2023-11-08 15:00:00",
         "catalog": [],
@@ -34,9 +29,7 @@
         "tags": [],
         "status": "published",
         "date": "2025-10-03 17:58:00",
-        "catalog": [
-          "memo"
-        ],
+        "catalog": ["memo"],
         "urlname": "281ac9fd-0546-806e-ae60-e54f32d82a73",
         "title": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
         "summary": "",
@@ -61,9 +54,7 @@
         "tags": [],
         "status": "published",
         "date": "2025-10-03 15:00:00",
-        "catalog": [
-          "review"
-        ],
+        "catalog": ["review"],
         "urlname": "animeko-review",
         "title": "Animeko 测评",
         "summary": "",
@@ -108,9 +99,7 @@
         "tags": [],
         "status": "published",
         "date": "2025-10-03 17:58:00",
-        "catalog": [
-          "memo"
-        ],
+        "catalog": ["memo"],
         "urlname": "281ac9fd-0546-806e-ae60-e54f32d82a73",
         "title": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
         "summary": "",
@@ -146,9 +135,7 @@
         "tags": [],
         "status": "published",
         "date": "2025-10-03 15:00:00",
-        "catalog": [
-          "review"
-        ],
+        "catalog": ["review"],
         "urlname": "animeko-review",
         "title": "Animeko 测评",
         "summary": "",
@@ -184,12 +171,7 @@
       "is_locked": false,
       "properties": {
         "category": "",
-        "tags": [
-          "elog",
-          "notion",
-          "hexo",
-          "blog"
-        ],
+        "tags": ["elog", "notion", "hexo", "blog"],
         "status": "published",
         "date": "2023-11-08 15:00:00",
         "catalog": [],

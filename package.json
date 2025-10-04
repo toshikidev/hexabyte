@@ -12,7 +12,8 @@
     "docs:preview": "vitepress preview docs",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,7 @@
     "katex": "^0.16.22",
     "lightgallery": "^2.9.0",
     "markdown-it-mathjax3": "^5.2.0",
+    "prettier": "^3.6.2",
     "sass-embedded": "^1.93.2",
     "scss": "^0.2.4",
     "vitepress": "2.0.0-alpha.12"
