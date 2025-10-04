@@ -149,3 +149,54 @@
 .atk-copyright {
   display: none !important;;
 }
+
+// katex responsiveness fix
+.katex {
+  font-size: 1.05em;
+  direction: ltr;
+}
+
+.katex-display {
+  overflow: auto hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .katex {
+    font-size: 1.21em;
+  }
+}
+
+.katex-error {
+  color: #f00;
+}
+// katex responsiveness fix ends
+
+
+/* Prevent Artalk textarea flash in dark mode */
+// html.dark .atk-main,
+html.dark .atk-textarea,
+html.dark .atk-editor,
+html.dark .atk-main-editor,
+html.dark .atk-bottom,
+html.dark .atk-editor .atk-textarea,
+.atk-layer-wrap.atk-dark-mode,
+html.dark .atk-editor .atk-textarea textarea {
+  background: #1E2224 !important;
+  color: #fff !important;
+  transition: none !important;
+}
+
+html.dark .atk-main-editor {
+  border: 1px solid #2e3437
+}
+
+.vp-nolebase-git-changelog.vp-nolebase-git-changelog-contributors.vp-nolebase-git-changelog-contributors-container.vp-nolebase-git-changelog-contributors-list,
+#contributors
+ {
+  display: none;
+}
