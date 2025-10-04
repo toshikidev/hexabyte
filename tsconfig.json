@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES6",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
@@ -19,6 +20,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["**/.vitepress/**/*.ts", "**/.vitepress/**/*.mts", "**/.vitepress/**/*.vue"],
+  "include": ["**/.vitepress/**/*.ts", "**/.vitepress/**/*.mts", "**/.vitepress/**/*.vue", "docs/vite.config.ts"],
   "exclude": ["node_modules"]
 }
