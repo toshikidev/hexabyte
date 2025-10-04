@@ -51,6 +51,7 @@ const vitePressOptions = {
     lineNumbers: false
   },
   themeConfig: {
+    lastUpdated: true,
     editLink: {
       pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path'
     },
