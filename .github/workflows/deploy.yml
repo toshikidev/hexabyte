@@ -37,6 +37,9 @@ jobs:
       - name: Run pnpm build
         run: pnpm build # for compiling new index file during auto-index process if new dir is created
 
+      - name: Run pnpm format
+        run: pnpm format
+
       - name: Commit and push changes if needed
         run: |
           git config --global user.name "github-actions[bot]"
