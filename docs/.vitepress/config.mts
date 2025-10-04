@@ -21,6 +21,7 @@ const RSS: RSSOptions = {
 }
 
 const vitePressOptions = {
+  base: '/',
   title: 'Hexabyte',
   description: 'Think, Read & Write; Reflect, Audit & Publish.',
   head: [
@@ -51,6 +52,7 @@ const vitePressOptions = {
     lineNumbers: false
   },
   themeConfig: {
+    base: '/',
     lastUpdated: true,
     editLink: {
       pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path'
