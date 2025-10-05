@@ -6,7 +6,7 @@ export const themeConfig: DefaultTheme.Config = {
   nav, // documentation navigation bar config
   footer, // site global footer config
 
-  logo: '/hexabyte.png',
+  logo: '/hexabyte.webp',
   outline: 'deep', // documentation outline header precedence
   outlineTitle: 'TOC', // documentation outline title text
   search: {

@@ -57,7 +57,7 @@ const vitePressOptions = {
     editLink: {
       pattern: 'https://github.com/toshikidev/hexabyte/edit/master/docs/:path',
     },
-    logo: '/hexabyte.png',
+    logo: '/hexabyte.webp',
     nav: [
       { text: 'Memo', link: '/memo/' },
       { text: 'Review', link: '/review/' },

@@ -12,6 +12,6 @@ hero:
       text: 在 GitHub 上查看
       link: https://github.com/
   image:
-    src: /hexabyte.png
+    src: /hexabyte.webp
     alt: VitePress
 ---

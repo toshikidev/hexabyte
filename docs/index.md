@@ -14,7 +14,7 @@ hero:
       text: View on GitHub
       link: https://github.com/
   image:
-    src: /hexabyte.png
+    src: /hexabyte.webp
     alt: VitePress
 # features:
 #   - title: Feature A
