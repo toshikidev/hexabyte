@@ -7,7 +7,7 @@ tags:
   - cli
   - regex
 status: published
-date: '2025-10-04 08:00:00'
+date: '2025-10-04 15:00:00'
 catalog:
   - zh/dev
 urlname: stripping-env-file-content-from-cli
@@ -17,9 +17,11 @@ updated: '2025-10-06 00:53:00'
 
 # 从 CLI 中剥离环境文件内容
 
+
 ```bash
 sed -E 's/^([A-Za-z_][A-Za-z0-9_]*)=.*/\\1=/; /^#|^$/!s/ //g' .env | pbcopy
 ```
+
 
 ## 说明
 

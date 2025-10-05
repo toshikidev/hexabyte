@@ -7,7 +7,7 @@ tags:
   - cli
   - regex
 status: published
-date: '2025-10-04 08:00:00'
+date: '2025-10-04 15:00:00'
 catalog:
   - dev
 urlname: stripping-env-file-content-from-cli
@@ -17,9 +17,11 @@ updated: '2025-10-04 22:59:00'
 
 # Stripping Environment File Content from the CLI
 
+
 ```bash
 sed -E 's/^([A-Za-z_][A-Za-z0-9_]*)=.*/\\1=/; /^#|^$/!s/ //g' .env | pbcopy
 ```
+
 
 ## Explanation
 

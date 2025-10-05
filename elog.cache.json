@@ -1,116 +1,23 @@
 {
   "docs": [
     {
-      "id": "281ac9fd-0546-806e-ae60-e54f32d82a73",
-      "doc_id": "281ac9fd-0546-806e-ae60-e54f32d82a73",
-      "updated": 1759682940000,
-      "properties": {
-        "category": "memo",
-        "author": "Chenskiro",
-        "tags": ["memo", "review", "productivity", "apps", "software"],
-        "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/memo"],
-        "urlname": "productivity-memo-01",
-        "title": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
-        "updated": "2025-10-06 00:49:00"
-      },
-      "catalog": [
-        {
-          "title": "zh/memo",
-          "doc_id": "281ac9fd-0546-806e-ae60-e54f32d82a73"
-        }
-      ],
-      "realName": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
-      "relativePath": "/zh/memo/效率备忘录 01 我的效率工具选择：Wox 与 imfile.md",
-      "docPath": "docs/zh/memo"
-    },
-    {
-      "id": "281ac9fd-0546-80a6-9739-ca5d2de19bab",
-      "doc_id": "281ac9fd-0546-80a6-9739-ca5d2de19bab",
-      "updated": 1759682880000,
-      "properties": {
-        "category": "review",
-        "author": "Chenskiro",
-        "tags": ["animeko", "review", "oss", "software"],
-        "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["review"],
-        "urlname": "animeko-review",
-        "title": "Animeko Review",
-        "updated": "2025-10-06 00:48:00"
-      },
-      "catalog": [
-        {
-          "title": "review",
-          "doc_id": "281ac9fd-0546-80a6-9739-ca5d2de19bab"
-        }
-      ],
-      "realName": "Animeko Review",
-      "relativePath": "/review/Animeko Review.md",
-      "docPath": "docs/review"
-    },
-    {
-      "id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5",
-      "doc_id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5",
-      "updated": 1759682940000,
-      "properties": {
-        "category": "memo",
-        "author": "Chenskiro",
-        "tags": ["memo", "apps", "software", "productivity", "awesome"],
-        "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/memo"],
-        "urlname": "productivity-memo-02",
-        "title": "效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip",
-        "updated": "2025-10-06 00:49:00"
-      },
-      "catalog": [
-        {
-          "title": "zh/memo",
-          "doc_id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5"
-        }
-      ],
-      "realName": "效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip",
-      "relativePath": "/zh/memo/效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip.md",
-      "docPath": "docs/zh/memo"
-    },
-    {
-      "id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
-      "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
-      "updated": 1759589940000,
-      "properties": {
-        "category": "dev",
-        "author": "Anda Toshiki",
-        "tags": ["dev", "tutorial", "cli", "regex"],
-        "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["dev"],
-        "urlname": "stripping-env-file-content-from-cli",
-        "title": "Stripping Environment File Content from the CLI",
-        "updated": "2025-10-04 22:59:00"
-      },
-      "catalog": [
-        {
-          "title": "dev",
-          "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6"
-        }
-      ],
-      "realName": "Stripping Environment File Content from the CLI",
-      "relativePath": "/dev/Stripping Environment File Content from the CLI.md",
-      "docPath": "docs/dev"
-    },
-    {
       "id": "283ac9fd-0546-8048-83f3-d07db567609e",
       "doc_id": "283ac9fd-0546-8048-83f3-d07db567609e",
       "updated": 1759683180000,
       "properties": {
         "category": "dev",
         "author": "Anda Toshiki",
-        "tags": ["dev", "tutorial", "cli", "regex"],
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
         "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["zh/dev"],
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "zh/dev"
+        ],
         "urlname": "stripping-env-file-content-from-cli",
         "title": "从 CLI 中剥离环境文件内容",
         "updated": "2025-10-06 00:53:00"
@@ -121,109 +28,9 @@
           "doc_id": "283ac9fd-0546-8048-83f3-d07db567609e"
         }
       ],
-      "realName": "从 CLI 中剥离环境文件内容",
-      "relativePath": "/zh/dev/从 CLI 中剥离环境文件内容.md",
+      "realName": "stripping-env-file-content-from-cli",
+      "relativePath": "/zh/dev/stripping-env-file-content-from-cli.md",
       "docPath": "docs/zh/dev"
-    },
-    {
-      "id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc",
-      "doc_id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc",
-      "updated": 1759683120000,
-      "properties": {
-        "category": "memo",
-        "author": "Chenskiro",
-        "tags": ["memo", "apps", "software", "productivity", "awesome"],
-        "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["memo"],
-        "urlname": "productivity-memo-02",
-        "title": "Efficiency Memo 02 Best Compression Software: 7-Zip, NanaZip and Bandizip",
-        "updated": "2025-10-06 00:52:00"
-      },
-      "catalog": [
-        {
-          "title": "memo",
-          "doc_id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc"
-        }
-      ],
-      "realName": "Efficiency Memo 02 Best Compression Software! 7-Zip, NanaZip and Bandizip",
-      "relativePath": "/memo/Efficiency Memo 02 Best Compression Software! 7-Zip, NanaZip and Bandizip.md",
-      "docPath": "docs/memo"
-    },
-    {
-      "id": "283ac9fd-0546-80e7-b061-ccbb6e89139e",
-      "doc_id": "283ac9fd-0546-80e7-b061-ccbb6e89139e",
-      "updated": 1759682700000,
-      "properties": {
-        "category": "dev",
-        "author": "Anda Toshiki",
-        "tags": ["cloudflare", "cf", "dev", "tutorial"],
-        "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["zh/dev"],
-        "urlname": "cloudflare-workers-reverse-proxy",
-        "title": "使用Cloudflare Workers创建反向代理 ",
-        "updated": "2025-10-06 00:45:00"
-      },
-      "catalog": [
-        {
-          "title": "zh/dev",
-          "doc_id": "283ac9fd-0546-80e7-b061-ccbb6e89139e"
-        }
-      ],
-      "realName": "使用Cloudflare Workers创建反向代理 ",
-      "relativePath": "/zh/dev/使用Cloudflare Workers创建反向代理 .md",
-      "docPath": "docs/zh/dev"
-    },
-    {
-      "id": "282ac9fd-0546-806a-8c26-e122f392d909",
-      "doc_id": "282ac9fd-0546-806a-8c26-e122f392d909",
-      "updated": 1759682700000,
-      "properties": {
-        "category": "dev",
-        "author": "Anda Toshiki",
-        "tags": ["cloudflare", "cf", "dev", "tutorial"],
-        "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["dev"],
-        "urlname": "cloudflare-workers-reverse-proxy",
-        "title": "Using Cloudflare Workers to Create a Reverse Proxy",
-        "updated": "2025-10-06 00:45:00"
-      },
-      "catalog": [
-        {
-          "title": "dev",
-          "doc_id": "282ac9fd-0546-806a-8c26-e122f392d909"
-        }
-      ],
-      "realName": "Using Cloudflare Workers to Create a Reverse Proxy",
-      "relativePath": "/dev/Using Cloudflare Workers to Create a Reverse Proxy.md",
-      "docPath": "docs/dev"
-    },
-    {
-      "id": "283ac9fd-0546-80d9-be6b-fe37f19f5568",
-      "doc_id": "283ac9fd-0546-80d9-be6b-fe37f19f5568",
-      "updated": 1759682820000,
-      "properties": {
-        "category": "review",
-        "author": "Chenskiro",
-        "tags": ["animeko", "review", "oss", "software"],
-        "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/review"],
-        "urlname": "animeko-review",
-        "title": "Animeko 测评",
-        "updated": "2025-10-06 00:47:00"
-      },
-      "catalog": [
-        {
-          "title": "zh/review",
-          "doc_id": "283ac9fd-0546-80d9-be6b-fe37f19f5568"
-        }
-      ],
-      "realName": "Animeko 测评",
-      "relativePath": "/zh/review/Animeko 测评.md",
-      "docPath": "docs/zh/review"
     },
     {
       "id": "283ac9fd-0546-801a-b9a8-eb77378c237c",
@@ -232,10 +39,18 @@
       "properties": {
         "category": "memo",
         "author": "Chenskiro",
-        "tags": ["memo", "review", "productivity", "apps", "software"],
+        "tags": [
+          "memo",
+          "review",
+          "productivity",
+          "apps",
+          "software"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["memo"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "memo"
+        ],
         "urlname": "productivity-memo-01",
         "title": "Efficiency Memo 01 My Choice of Efficiency Tools: Wox vs imfile",
         "updated": "2025-10-06 00:52:00"
@@ -246,9 +61,268 @@
           "doc_id": "283ac9fd-0546-801a-b9a8-eb77378c237c"
         }
       ],
-      "realName": "Efficiency Memo 01 My Choice of Efficiency Tools! Wox vs imfile",
-      "relativePath": "/memo/Efficiency Memo 01 My Choice of Efficiency Tools! Wox vs imfile.md",
+      "realName": "productivity-memo-01",
+      "relativePath": "/memo/productivity-memo-01.md",
       "docPath": "docs/memo"
+    },
+    {
+      "id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc",
+      "doc_id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc",
+      "updated": 1759683120000,
+      "properties": {
+        "category": "memo",
+        "author": "Chenskiro",
+        "tags": [
+          "memo",
+          "apps",
+          "software",
+          "productivity",
+          "awesome"
+        ],
+        "status": "published",
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "memo"
+        ],
+        "urlname": "productivity-memo-02",
+        "title": "Efficiency Memo 02 Best Compression Software: 7-Zip, NanaZip and Bandizip",
+        "updated": "2025-10-06 00:52:00"
+      },
+      "catalog": [
+        {
+          "title": "memo",
+          "doc_id": "283ac9fd-0546-80dd-abd5-e009b0ff9dcc"
+        }
+      ],
+      "realName": "productivity-memo-02",
+      "relativePath": "/memo/productivity-memo-02.md",
+      "docPath": "docs/memo"
+    },
+    {
+      "id": "283ac9fd-0546-80e7-b061-ccbb6e89139e",
+      "doc_id": "283ac9fd-0546-80e7-b061-ccbb6e89139e",
+      "updated": 1759682700000,
+      "properties": {
+        "category": "dev",
+        "author": "Anda Toshiki",
+        "tags": [
+          "cloudflare",
+          "cf",
+          "dev",
+          "tutorial"
+        ],
+        "status": "published",
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "zh/dev"
+        ],
+        "urlname": "cloudflare-workers-reverse-proxy",
+        "title": "使用Cloudflare Workers创建反向代理 ",
+        "updated": "2025-10-06 00:45:00"
+      },
+      "catalog": [
+        {
+          "title": "zh/dev",
+          "doc_id": "283ac9fd-0546-80e7-b061-ccbb6e89139e"
+        }
+      ],
+      "realName": "cloudflare-workers-reverse-proxy",
+      "relativePath": "/zh/dev/cloudflare-workers-reverse-proxy.md",
+      "docPath": "docs/zh/dev"
+    },
+    {
+      "id": "282ac9fd-0546-806a-8c26-e122f392d909",
+      "doc_id": "282ac9fd-0546-806a-8c26-e122f392d909",
+      "updated": 1759682700000,
+      "properties": {
+        "category": "dev",
+        "author": "Anda Toshiki",
+        "tags": [
+          "cloudflare",
+          "cf",
+          "dev",
+          "tutorial"
+        ],
+        "status": "published",
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "dev"
+        ],
+        "urlname": "cloudflare-workers-reverse-proxy",
+        "title": "Using Cloudflare Workers to Create a Reverse Proxy",
+        "updated": "2025-10-06 00:45:00"
+      },
+      "catalog": [
+        {
+          "title": "dev",
+          "doc_id": "282ac9fd-0546-806a-8c26-e122f392d909"
+        }
+      ],
+      "realName": "cloudflare-workers-reverse-proxy",
+      "relativePath": "/dev/cloudflare-workers-reverse-proxy.md",
+      "docPath": "docs/dev"
+    },
+    {
+      "id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
+      "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6",
+      "updated": 1759589940000,
+      "properties": {
+        "category": "dev",
+        "author": "Anda Toshiki",
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
+        "status": "published",
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "dev"
+        ],
+        "urlname": "stripping-env-file-content-from-cli",
+        "title": "Stripping Environment File Content from the CLI",
+        "updated": "2025-10-04 22:59:00"
+      },
+      "catalog": [
+        {
+          "title": "dev",
+          "doc_id": "282ac9fd-0546-80ff-b5e7-e8903bd06cb6"
+        }
+      ],
+      "realName": "stripping-env-file-content-from-cli",
+      "relativePath": "/dev/stripping-env-file-content-from-cli.md",
+      "docPath": "docs/dev"
+    },
+    {
+      "id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5",
+      "doc_id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5",
+      "updated": 1759682940000,
+      "properties": {
+        "category": "memo",
+        "author": "Chenskiro",
+        "tags": [
+          "memo",
+          "apps",
+          "software",
+          "productivity",
+          "awesome"
+        ],
+        "status": "published",
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/memo"
+        ],
+        "urlname": "productivity-memo-02",
+        "title": "效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip",
+        "updated": "2025-10-06 00:49:00"
+      },
+      "catalog": [
+        {
+          "title": "zh/memo",
+          "doc_id": "281ac9fd-0546-80e9-9aa6-fb89df7493b5"
+        }
+      ],
+      "realName": "productivity-memo-02",
+      "relativePath": "/zh/memo/productivity-memo-02.md",
+      "docPath": "docs/zh/memo"
+    },
+    {
+      "id": "281ac9fd-0546-806e-ae60-e54f32d82a73",
+      "doc_id": "281ac9fd-0546-806e-ae60-e54f32d82a73",
+      "updated": 1759682940000,
+      "properties": {
+        "category": "memo",
+        "author": "Chenskiro",
+        "tags": [
+          "memo",
+          "review",
+          "productivity",
+          "apps",
+          "software"
+        ],
+        "status": "published",
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/memo"
+        ],
+        "urlname": "productivity-memo-01",
+        "title": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
+        "updated": "2025-10-06 00:49:00"
+      },
+      "catalog": [
+        {
+          "title": "zh/memo",
+          "doc_id": "281ac9fd-0546-806e-ae60-e54f32d82a73"
+        }
+      ],
+      "realName": "productivity-memo-01",
+      "relativePath": "/zh/memo/productivity-memo-01.md",
+      "docPath": "docs/zh/memo"
+    },
+    {
+      "id": "281ac9fd-0546-80a6-9739-ca5d2de19bab",
+      "doc_id": "281ac9fd-0546-80a6-9739-ca5d2de19bab",
+      "updated": 1759682880000,
+      "properties": {
+        "category": "review",
+        "author": "Chenskiro",
+        "tags": [
+          "animeko",
+          "review",
+          "oss",
+          "software"
+        ],
+        "status": "published",
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "review"
+        ],
+        "urlname": "animeko-review",
+        "title": "Animeko Review",
+        "updated": "2025-10-06 00:48:00"
+      },
+      "catalog": [
+        {
+          "title": "review",
+          "doc_id": "281ac9fd-0546-80a6-9739-ca5d2de19bab"
+        }
+      ],
+      "realName": "animeko-review",
+      "relativePath": "/review/animeko-review.md",
+      "docPath": "docs/review"
+    },
+    {
+      "id": "283ac9fd-0546-80d9-be6b-fe37f19f5568",
+      "doc_id": "283ac9fd-0546-80d9-be6b-fe37f19f5568",
+      "updated": 1759682820000,
+      "properties": {
+        "category": "review",
+        "author": "Chenskiro",
+        "tags": [
+          "animeko",
+          "review",
+          "oss",
+          "software"
+        ],
+        "status": "published",
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/review"
+        ],
+        "urlname": "animeko-review",
+        "title": "Animeko 测评",
+        "updated": "2025-10-06 00:47:00"
+      },
+      "catalog": [
+        {
+          "title": "zh/review",
+          "doc_id": "283ac9fd-0546-80d9-be6b-fe37f19f5568"
+        }
+      ],
+      "realName": "animeko-review",
+      "relativePath": "/zh/review/animeko-review.md",
+      "docPath": "docs/zh/review"
     }
   ],
   "catalog": [
@@ -277,10 +351,17 @@
       "properties": {
         "category": "dev",
         "author": "Anda Toshiki",
-        "tags": ["dev", "tutorial", "cli", "regex"],
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
         "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["zh/dev"],
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "zh/dev"
+        ],
         "urlname": "stripping-env-file-content-from-cli",
         "title": "从 CLI 中剥离环境文件内容",
         "updated": "2025-10-06 00:53:00"
@@ -313,10 +394,18 @@
       "properties": {
         "category": "memo",
         "author": "Chenskiro",
-        "tags": ["memo", "apps", "software", "productivity", "awesome"],
+        "tags": [
+          "memo",
+          "apps",
+          "software",
+          "productivity",
+          "awesome"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["memo"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "memo"
+        ],
         "urlname": "productivity-memo-02",
         "title": "Efficiency Memo 02 Best Compression Software: 7-Zip, NanaZip and Bandizip",
         "updated": "2025-10-06 00:52:00"
@@ -349,10 +438,18 @@
       "properties": {
         "category": "memo",
         "author": "Chenskiro",
-        "tags": ["memo", "review", "productivity", "apps", "software"],
+        "tags": [
+          "memo",
+          "review",
+          "productivity",
+          "apps",
+          "software"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["memo"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "memo"
+        ],
         "urlname": "productivity-memo-01",
         "title": "Efficiency Memo 01 My Choice of Efficiency Tools: Wox vs imfile",
         "updated": "2025-10-06 00:52:00"
@@ -385,10 +482,17 @@
       "properties": {
         "category": "review",
         "author": "Chenskiro",
-        "tags": ["animeko", "review", "oss", "software"],
+        "tags": [
+          "animeko",
+          "review",
+          "oss",
+          "software"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/review"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/review"
+        ],
         "urlname": "animeko-review",
         "title": "Animeko 测评",
         "updated": "2025-10-06 00:47:00"
@@ -421,10 +525,17 @@
       "properties": {
         "category": "dev",
         "author": "Anda Toshiki",
-        "tags": ["cloudflare", "cf", "dev", "tutorial"],
+        "tags": [
+          "cloudflare",
+          "cf",
+          "dev",
+          "tutorial"
+        ],
         "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["zh/dev"],
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "zh/dev"
+        ],
         "urlname": "cloudflare-workers-reverse-proxy",
         "title": "使用Cloudflare Workers创建反向代理 ",
         "updated": "2025-10-06 00:45:00"
@@ -457,10 +568,17 @@
       "properties": {
         "category": "dev",
         "author": "Anda Toshiki",
-        "tags": ["cloudflare", "cf", "dev", "tutorial"],
+        "tags": [
+          "cloudflare",
+          "cf",
+          "dev",
+          "tutorial"
+        ],
         "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["dev"],
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "dev"
+        ],
         "urlname": "cloudflare-workers-reverse-proxy",
         "title": "Using Cloudflare Workers to Create a Reverse Proxy",
         "updated": "2025-10-06 00:45:00"
@@ -493,10 +611,17 @@
       "properties": {
         "category": "dev",
         "author": "Anda Toshiki",
-        "tags": ["dev", "tutorial", "cli", "regex"],
+        "tags": [
+          "dev",
+          "tutorial",
+          "cli",
+          "regex"
+        ],
         "status": "published",
-        "date": "2025-10-04 08:00:00",
-        "catalog": ["dev"],
+        "date": "2025-10-04 15:00:00",
+        "catalog": [
+          "dev"
+        ],
         "urlname": "stripping-env-file-content-from-cli",
         "title": "Stripping Environment File Content from the CLI",
         "updated": "2025-10-04 22:59:00"
@@ -529,10 +654,18 @@
       "properties": {
         "category": "memo",
         "author": "Chenskiro",
-        "tags": ["memo", "apps", "software", "productivity", "awesome"],
+        "tags": [
+          "memo",
+          "apps",
+          "software",
+          "productivity",
+          "awesome"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/memo"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/memo"
+        ],
         "urlname": "productivity-memo-02",
         "title": "效率备忘录 02 最佳压缩软件：7-Zip, NanaZip 和 Bandizip",
         "updated": "2025-10-06 00:49:00"
@@ -565,10 +698,18 @@
       "properties": {
         "category": "memo",
         "author": "Chenskiro",
-        "tags": ["memo", "review", "productivity", "apps", "software"],
+        "tags": [
+          "memo",
+          "review",
+          "productivity",
+          "apps",
+          "software"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["zh/memo"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "zh/memo"
+        ],
         "urlname": "productivity-memo-01",
         "title": "效率备忘录 01 我的效率工具选择：Wox 与 imfile",
         "updated": "2025-10-06 00:49:00"
@@ -601,10 +742,17 @@
       "properties": {
         "category": "review",
         "author": "Chenskiro",
-        "tags": ["animeko", "review", "oss", "software"],
+        "tags": [
+          "animeko",
+          "review",
+          "oss",
+          "software"
+        ],
         "status": "published",
-        "date": "2025-10-03 08:00:00",
-        "catalog": ["review"],
+        "date": "2025-10-03 15:00:00",
+        "catalog": [
+          "review"
+        ],
         "urlname": "animeko-review",
         "title": "Animeko Review",
         "updated": "2025-10-06 00:48:00"

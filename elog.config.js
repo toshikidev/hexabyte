@@ -17,7 +17,7 @@ module.exports = {
     platform: 'local',
     local: {
       outputDir: './docs',
-      filename: 'title',
+      filename: 'urlname',
       format: 'markdown',
       frontMatter: {
         enable: true,
