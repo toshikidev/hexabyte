@@ -15,8 +15,8 @@ export default {
   extends: DefaultTheme,
   Layout,
   enhanceApp({ app }) {
-  app.component('Artalk', Artalk)
-  app.component('PageInfo', PageInfo)
+    app.component('Artalk', Artalk)
+    app.component('PageInfo', PageInfo)
 
     app.use(NolebaseGitChangelogPlugin, {
       hideContributorsHeader: true,

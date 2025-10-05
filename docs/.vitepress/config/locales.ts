@@ -5,11 +5,11 @@ export const locales = {
   root: {
     label: 'English',
     lang: 'en-US',
-    ...en
+    ...en,
   },
   zh: {
     label: '简体中文',
     lang: 'zh-CN',
-    ...zh
-  }
+    ...zh,
+  },
 }

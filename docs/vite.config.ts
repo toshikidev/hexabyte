@@ -12,52 +12,52 @@ import type { UserConfig } from 'vite'
 const require = createRequire(import.meta.url)
 
 export default defineConfig(async () => {
-    return <UserConfig>{
-        server: {
-            hmr: {
-                overlay: false,
-            },
-            fs: {
-                allow: [resolve(__dirname, '..')],
-            },
-        },
-        plugins: [
-            // custom markdown transformation plugin with regex
-            MarkdownTransform(),
-            // custom components including plugins
-            Components({
-                dirs: ['.vitepress/theme/components'],
-                include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-                resolvers: [
-                    IconsResolver({
-                        componentPrefix: '',
-                    }),
-                    ArcoResolver({ sideEffect: true, resolveIcons: true }),
-                ],
-                dts: './.vitepress/components.d.ts',
-                transformer: 'vue3',
-            }),
-            Icons({
-                compiler: 'vue3',
-                autoInstall: true,
-                defaultStyle: 'display: inline-block',
-            }),
-            UnoCSS(),
+  return <UserConfig>{
+    server: {
+      hmr: {
+        overlay: false,
+      },
+      fs: {
+        allow: [resolve(__dirname, '..')],
+      },
+    },
+    plugins: [
+      // custom markdown transformation plugin with regex
+      MarkdownTransform(),
+      // custom components including plugins
+      Components({
+        dirs: ['.vitepress/theme/components'],
+        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        resolvers: [
+          IconsResolver({
+            componentPrefix: '',
+          }),
+          ArcoResolver({ sideEffect: true, resolveIcons: true }),
         ],
-        css: {
-            postcss: {
-                plugins: [require('postcss-nested')],
-            },
-        },
-        // ssr: {
-        //     noExternal: ['@andatoshiki/vitepress-plugin-nprogress', '@arco-design/web-vue'],
-        // },
-        build: {
-            chunkSizeWarningLimit: 1600,
-            // rollup build options
-            rollupOptions: {
-                external: ['node:*', './assets/*'],
-            },
-        },
-    }
+        dts: './.vitepress/components.d.ts',
+        transformer: 'vue3',
+      }),
+      Icons({
+        compiler: 'vue3',
+        autoInstall: true,
+        defaultStyle: 'display: inline-block',
+      }),
+      UnoCSS(),
+    ],
+    css: {
+      postcss: {
+        plugins: [require('postcss-nested')],
+      },
+    },
+    // ssr: {
+    //     noExternal: ['@andatoshiki/vitepress-plugin-nprogress', '@arco-design/web-vue'],
+    // },
+    build: {
+      chunkSizeWarningLimit: 1600,
+      // rollup build options
+      rollupOptions: {
+        external: ['node:*', './assets/*'],
+      },
+    },
+  }
 })

@@ -1,3 +1,3 @@
 export const sitemap = {
-    hostname: 'https://hexabyte.cc',
+  hostname: 'https://hexabyte.cc',
 }

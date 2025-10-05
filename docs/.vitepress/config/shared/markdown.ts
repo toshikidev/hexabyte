@@ -9,18 +9,18 @@ import { bookmarkPreviewMdPlugin } from '../../plugins/bookmark-preview'
 // import mdLink from 'markdown-it-link-preview'
 
 export const markdown: MarkdownOptions = {
-    html: true,
-    theme: {
-        light: 'github-light',
-        dark: 'github-dark-dimmed',
-    },
-    lineNumbers: false,
-    config: md => {
-        // use more markdown-it plugins!
-        md.use(mdkatex),
-        md.use(mdkatex),
-        md.use(mdLink),
-        md.use(lightbox),
-        md.use(bookmarkPreviewMdPlugin)
-    },
+  html: true,
+  theme: {
+    light: 'github-light',
+    dark: 'github-dark-dimmed',
+  },
+  lineNumbers: false,
+  config: (md) => {
+    // use more markdown-it plugins!
+    ;(md.use(mdkatex),
+      md.use(mdkatex),
+      md.use(mdLink),
+      md.use(lightbox),
+      md.use(bookmarkPreviewMdPlugin))
+  },
 }

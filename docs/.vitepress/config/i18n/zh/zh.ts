@@ -12,7 +12,7 @@ export const zh = defineConfig({
         link: '/zh/memo/',
       },
       {
-        text: '测评', 
+        text: '测评',
         link: '/zh/review/',
       },
       {
@@ -27,13 +27,13 @@ export const zh = defineConfig({
     },
 
     footer: {
-      message: '基于 <a href="https://github.com/toshikidev/hexabyte/blob/main/LICENSE">MIT 协议</a> 发布。',
+      message:
+        '基于 <a href="https://github.com/toshikidev/hexabyte/blob/main/LICENSE">MIT 协议</a> 发布。',
       copyright: 'Copyright © 2025-present Hexabyte',
     },
 
     search: {
       provider: 'local',
     },
-
   },
 })

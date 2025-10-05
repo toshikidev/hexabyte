@@ -1,5 +1,6 @@
 ---
 category: dev
+author: Anda Toshiki
 tags:
   - dev
   - tutorial
@@ -11,17 +12,14 @@ catalog:
   - dev
 urlname: stripping-env-file-content-from-cli
 title: Stripping Environment File Content from the CLI
-summary: 使用一条 sed 命令从 .env 中提取变量名并去除空格，保留注释和空行，结果复制到剪贴板。
-updated: '2025-10-04 19:11:00'
+updated: '2025-10-04 22:59:00'
 ---
 
 # Stripping Environment File Content from the CLI
 
-
 ```bash
 sed -E 's/^([A-Za-z_][A-Za-z0-9_]*)=.*/\\1=/; /^#|^$/!s/ //g' .env | pbcopy
 ```
-
 
 ## Explanation
 

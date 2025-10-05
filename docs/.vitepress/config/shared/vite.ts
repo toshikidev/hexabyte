@@ -17,13 +17,8 @@ export default {
     GitChangelog({
       repoURL: () => 'https://github.com/toshikidev/hexabyte',
     }),
-    GitChangelogMarkdownSection
-({ 
-      exclude
-: (id
-) => id
-.endsWith
-('index.md'), 
+    GitChangelogMarkdownSection({
+      exclude: (id) => id.endsWith('index.md'),
     }),
     bookmarkPreviewPlugin(),
   ],
@@ -33,6 +28,6 @@ export default {
     },
   },
   ssr: {
-      noExternal: ["vuetify"]
-    }
+    noExternal: ['vuetify'],
+  },
 }
