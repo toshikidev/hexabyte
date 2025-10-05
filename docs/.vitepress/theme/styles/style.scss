@@ -1,6 +1,7 @@
 @import url('./blur.scss');
 @import url('./mac.scss');
 @import url('./link-preview.scss');
+@import url('./font.scss');
 
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
@@ -89,13 +90,16 @@
 }
 
 .vp-doc img {
-  border-radius: 5px;
+  border-radius: 0.5rem;
   display: block;
   margin: 1.5rem auto; /* centers horizontally */
   max-width: 100%; /* keeps images responsive */
   height: auto;
 }
 
+.medium-zoom-image.medium-zoom-image--opened {
+  border-radius: 0.5rem;
+}
 .atk-copyright {
   display: none !important;
 }

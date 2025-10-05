@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import Artalk from './components/Artalk.vue'
 import PageInfo from './components/PageInfo.vue'
 import Layout from './components/Layout.vue'

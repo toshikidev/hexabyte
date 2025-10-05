@@ -36,11 +36,20 @@ export function autoIndexPlugin() {
       console.log(`Auto-generated (rewritten): ${indexPath}`)
     }
 
-    // Loop through each subfolder in /docs
+    // Index direct subfolders of /docs
     fs.readdirSync(docsRoot).forEach((folder) => {
       const dir = path.join(docsRoot, folder)
-      if (fs.statSync(dir).isDirectory()) {
+      if (fs.statSync(dir).isDirectory() && folder !== 'zh') {
         generateIndex(dir, folder)
+      }
+      // If folder is 'zh', also index its first-level subfolders
+      if (folder === 'zh') {
+        fs.readdirSync(dir).forEach((subfolder) => {
+          const subdir = path.join(dir, subfolder)
+          if (fs.statSync(subdir).isDirectory()) {
+            generateIndex(subdir, `zh/${subfolder}`)
+          }
+        })
       }
     })
   }
