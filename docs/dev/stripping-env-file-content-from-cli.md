@@ -17,11 +17,9 @@ updated: '2025-10-04 22:59:00'
 
 # Stripping Environment File Content from the CLI
 
-
 ```bash
 sed -E 's/^([A-Za-z_][A-Za-z0-9_]*)=.*/\\1=/; /^#|^$/!s/ //g' .env | pbcopy
 ```
-
 
 ## Explanation
 

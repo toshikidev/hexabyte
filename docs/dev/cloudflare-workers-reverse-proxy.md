@@ -17,24 +17,17 @@ updated: '2025-10-06 00:45:00'
 
 # Using CloudFlare Workers to Create a Reverse Proxy
 
-
 ## Introduction
-
 
 Cloudflare Workers is a serverless functions platform with global CDN distribution. Free plans include up to 100,000 requests per day. With a simple setup, you can create a reverse proxy to access any website and improve the experience.Cloudflare Workers is a serverless functions platform with global CDN distribution. Free plans include up to 100,000 requests per day. With a simple setup, you can create a reverse proxy to access any website and improve the experience.
 
-
 [bookmark](https://cloudflare.com)
-
 
 ## Quick Start: Reverse ProxyQuick Start: Reverse Proxy
 
-
 Below is a Cloudflare Workers reverse proxy script. Replace [`example.com`](http://example.com/) with your target site’s domain.Below is a Cloudflare Workers reverse proxy script. Replace [`example.com`](http://example.com/) with your target site’s domain.
 
-
 ### Core CodeCore Code
-
 
 ```javascript
 // Domain of the site to reverse proxy
@@ -90,7 +83,7 @@ async function fetchAndApply(request) {
   const upstream_domain = await device_status(user_agent) ? upstream : upstream_mobile;
 
   // Update path and domain
-  
+
 url.host
  = upstream_domain;
   url.pathname = url.pathname === '/' ? upstream_path : upstream_path + url.pathname;
@@ -213,7 +206,7 @@ async function fetchAndApply(request) {
   const upstream_domain = await device_status(user_agent) ? upstream : upstream_mobile;
 
   // Update path and domain
-  
+
 url.host
  = upstream_domain;
   url.pathname = url.pathname === '/' ? upstream_path : upstream_path + url.pathname;
@@ -285,7 +278,6 @@ async function device_status(user_agent_info) {
   return !agents.some(agent => user_agent_info.includes(agent));
 }
 ```
-
 
 ## Steps to Use
 
